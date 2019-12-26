@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Все что мне нужно</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+        body {
+            background: url('images/1.gif');
+            background-size: 70px;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-family: 'Pacifico', cursive;
+            color: #FEDA15;
+            text-shadow: -2px 0 #FF0F39, 0 1px #FF0F39, 1px 0 #FF0F39, 0 -1px #FF0F39;;
+        }
+
+        .jlr {
+            font-size: 0;
+        }
+
+        .jlr .jlr_item {
+            font-size: 1rem;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 6px;
+        }
+
+        .jlr img.jlr_img {
+            height: 400px;
+            transition: all 2s;
+            background: linear-gradient(90deg, #FEDA15 50%, transparent 50%), linear-gradient(90deg, #FEDA15 50%, transparent 50%), linear-gradient(0deg, #FEDA15 50%, transparent 50%), linear-gradient(0deg, #FEDA15 50%, transparent 50%);
+            background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+            background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+            padding: 5px;
+            animation: border-dance 10s infinite linear;
+        }
+
+        .jlr img.jlr_img:hover {
+            box-shadow: 2px 2px 15px 5px #FEDA15;
+        }
+
+        @keyframes border-dance {
+            0% {
+                background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+            }
+
+            100% {
+                background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+            }
+        }
+
+        .jlr img.jlr_loaded {
+            -webkit-transition: opacity 1s ease-in;
+            -moz-transition: opacity 1s ease-in;
+            -o-transition: opacity 1s ease-in;
+            -ms-transition: opacity 1s ease-in;
+            transition: opacity 1s ease-in;
+            opacity: 1;
+        }
+
+        .right {
+            float: right;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">2019 оставил множество моментов ...</h1>
+        <div id="jLightroom" class="jlr">
+
+        </div>
+        <h1 class="title right">... 2020 подарит ещё больше</h1>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    const MAIN = $('#jLightroom');
+    for (var i = 1; i <= 50; i++) {
+        MAIN.append(`
+        <a href="images/1 (${i}).jpg" data-lightbox="lb1" class="jlr_item  ">
+            <img src="images/1 (${i}).jpg" class="jlr_img">
+        </a>
+    `)
+    }
+</script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/jquery.lightroom.js"></script>
+
+<script type="text/javascript">
+    $("#jLightroom").lightroom({
+        image_container_selector: ".jlr_item",
+        img_selector: "img.jlr_img",
+        img_class_loaded: "jlr_loaded",
+        img_space: 5,
+        img_mode: 'min',
+        init_callback: function (elem) {
+            $(elem).removeClass("gray_out")
+        }
+    }).init();
+
+</script>
+
+</html>
