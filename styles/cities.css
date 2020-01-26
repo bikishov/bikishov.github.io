@@ -1,0 +1,28 @@
+.cities{
+  background-color: #d2f8ff;
+}
+
+.col-3 img{
+  width: 100%;
+}
+
+.city-info{
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.city-info i{
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  color: #1c8da1;
+  margin-right: 10px;
+}
+
+.anim2{
+  opacity: 0;
+}
+.anim2.animated{
+  opacity: 1;
+}

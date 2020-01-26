@@ -1,0 +1,33 @@
+.images-container{
+  width: 100%;
+}
+.images-container li{
+  display: block;
+  float: left;
+  width: 33.333%;
+}
+
+.food-image{
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.food-image img{
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  transform: scale(1.2);
+  transition: all .5s;
+}
+.food-image img:hover{
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width:970px){
+  .images-container li{
+    display: block;
+    float: left;
+    width: 50%;
+  }
+}

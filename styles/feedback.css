@@ -1,0 +1,24 @@
+.feedback {
+  background-image: linear-gradient(rgba(40, 40, 54, 0.274), rgb(20, 31, 44)), url('../images/feedback.jpg');
+  block-size: cover;
+  height: auto;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.feedback blockquote {
+  font-style: italic;
+  font-weight: lighter;
+
+}
+blockquote{
+  text-align: center;
+}
+
+cite img{
+  margin: 10px auto;
+  display: block;
+  border-radius: 50%;
+  width: 150px;
+  border: 5px solid #1c8da1;
+}

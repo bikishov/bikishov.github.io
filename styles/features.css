@@ -1,0 +1,35 @@
+.center{
+  text-align: center;
+}
+.features-p{
+  margin-bottom: 20px;
+  padding: 0 10px;
+  font-size: 85%;
+
+}
+.features-icon{
+  display: block;
+  font-size: 300%;
+  color: #1c8da1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.features p{
+  font-size: 90%;
+}
+
+.anim1{
+  opacity: 0;
+}
+.anim1.animated{
+  opacity: 1;
+}
+@media screen and (max-width:970px){
+  .features p{
+    text-align: center;
+  }
+  .features{
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,32 @@
+footer{
+  background: linear-gradient(#0c2c31, #1f2c3b);
+  text-align: center;
+  padding: 50px 0;
+}
+.footer-nav{
+  margin-bottom: 100px;
+}
+.footer-nav li {
+  margin-bottom: 10px;
+}
+.footer-nav li a,.footer-social-links a{
+  color: #1c8da1;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.footer-nav li a:hover,.footer-social-links a:hover{
+  color: #fff;
+}
+.footer-social-links{
+  margin-bottom: 10px;
+}
+.footer-social-links li{
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 200%;
+}
+footer p{
+  margin-bottom: 20px;
+}

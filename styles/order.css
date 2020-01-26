@@ -1,0 +1,46 @@
+.phone-image{
+width: 80%;
+}
+.phone-image-container{
+  margin-left: 10%;
+  margin-right: 3%;
+}
+.order-step{
+  margin-top: 80px;
+}
+
+.order-step:last-child{
+  margin-bottom: 50px;
+}
+.order-step div{
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  float: left;
+  border: 1px solid #1c8da1;
+  text-align: center;
+  margin-right: 10px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #1c8da1;
+}
+.order-step p {
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+.app-button img{
+  height: 50px;
+  margin-right: 10px;
+}
+.anim3{
+  opacity: 0;
+}
+.anim3.animated{
+  opacity: 1;
+}
+@media screen and (max-width:970px){
+  .phone-image{
+    width: 80%;
+    }
+}
