@@ -120,7 +120,7 @@ $(".mobile-nav-icon").click(function() {
     $(".nav-main").slideToggle();
     $(".nav").animate(
       {
-        height: "300px"
+        height: "100vh"
       },
       500
     );
