@@ -1,0 +1,150 @@
+.black-bar {
+    font-size: 16px;
+    padding: 16px 0;
+    background-color: #00122f
+}
+
+.black-bar__link {
+    text-decoration: underline
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0 0 0 ;
+}
+
+.black-bar__header {
+    margin: 0;
+    font-size: 16px;
+    font-weight: lighter;
+    display: inline-block;
+    text-align: center
+}
+
+.header {
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+
+.menu-open {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: url("../img/burger.png") no-repeat 50%;
+    background-color: inherit;
+}
+
+.menu-close {
+    background: url("../img/close.png") no-repeat 50%;
+}
+
+.logo {
+    margin-right: 10px;
+    min-width: 40px;
+}
+.logo-image{
+    height: 40px;
+}
+
+.city {
+    color: #689ed2;
+    font-size: 1.2em;
+    border-bottom: 1px dashed #689ed2
+}
+
+.city-link {
+    background: url("../img/arrow.png") no-repeat 100% 50%;
+    padding-right: 10px;
+    margin-right: 20px
+}
+
+.top-menu__date,
+.top-menu__now {
+    margin-right: 49px;
+    display: inline-block
+}
+
+.top-menu__date,
+.top-menu__time {
+    color: #91919f
+}
+
+.top-menu__time {
+    padding-left: 20px;
+    background-image: url("../img/icon-time-2.png");
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+    background-size: 15px 15px
+}
+
+.top-menu__weather{
+    padding-left: 40px;
+    color: #91919f;
+    background-image: url("../img/icon-weather.png");
+    background-repeat: no-repeat;
+    background-position: 0 -5px
+}
+
+.search-form {
+    max-width: 320px;
+    margin-left: 40px;
+    position: relative
+}
+
+.input__search {
+    width: 320px;
+    padding: 15px 45px 15px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f3f3f3
+}
+
+.button__submit {
+    position: absolute;
+    left: 275px;
+    bottom: 1%;
+    width: 56px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/icon-search.png");
+    background-repeat: no-repeat
+}
+
+.nav {
+    margin-top: 30px;
+    display: inline-block;
+    color: #91919f;
+}
+
+.nav__item {
+    display: inline;
+    margin-right: 35px;
+    position: relative;
+}
+
+.nav__item::after {
+    position: absolute;
+    right: -15px;
+    content: "/";
+    color: #91919f
+}
+
+.nav__item:last-child::after {
+    content: ""
+}
+
+.nav__link {
+    font-size: 16px;
+    color: #000
+}

@@ -1,28 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body>
-		<h1>Мои проекты</h1>
-		<ul>
-			<li>
-				<a href="/restaraunt-sushi/">Ресторан суши</a>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+		body {
+			font-family: 'Roboto Slab';
+			color: rgba(255, 255, 255, 0.93);
+			background-color: #e2e2e2;
+		}
+
+		h1 {
+			margin-top: 0px;
+			text-align: center;
+			color: rgba(0, 0, 0, 0.841);
+		}
+
+		h2:hover {
+			color: rgba(138, 138, 138, 0.776) !important;
+		}
+
+		ul {
+			margin: 0;
+			padding-left: 20px;
+		}
+
+		.list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-column-gap: 10px;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.841);
+		}
+
+		.title a:hover {
+			color: rgba(138, 138, 138, 0.776) !important;
+		}
+
+		.list a {
+			color: rgba(255, 255, 255, 0.93);
+		}
+
+		.item {
+			border-radius: 10px;
+			box-shadow: 0px 5px 6px 3px rgba(0, 0, 0, 0.55);
+			margin-bottom: 10px;
+			background-color: rgba(0, 0, 0, 0.841);
+			padding: 5px 20px 20px 20px;
+		}
+
+		.item:hover {
+			background-color: #ffda00;
+		}
+
+		.item:hover a {
+			color: rgba(0, 0, 0, 0.841);
+		}
+
+		.item:hover .button {
+			color: rgb(64, 64, 64);
+			border-bottom: 2px solid rgba(64, 64, 64, 0.856);
+		}
+
+		.item:hover .description {
+			color: rgb(64, 64, 64);
+		}
+
+		p {
+			display: none;
+		}
+
+		.button {
+			color: #ffda00;
+			background-color: inherit;
+			border: none;
+			font-size: 12px;
+			padding: 10px 0 10px 0;
+			border-bottom: 2px solid #ffda00;
+		}
+
+		.item:hover p {
+			display: block;
+			animation: fadeIn 1s;
+		}
+
+		@media (max-width:768px) {
+			.list {
+				grid-template-columns: 1fr
+			}
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main class="container">
+		<h1 class="title">Мои проекты</h1>
+		<ul class="list">
+			<li class="item">
+				<a href="/movie-api/"">
+					<h2>Поиск фильмов | 02.03.2020</h2>
+					<ul>
+						<li>React js</li>
+						<li>Сторонний API</li>
+					</ul>
+				</a>
+				<div class=" description">
+					<button class="button">Описание</button>
+					<p>Простое приложение, написанное с исользованим хуков react.</p>
+					</div>
 			</li>
-			<li>
-				<a href="/tic-toc/">Крестики-нолики</a>
+			<li class="item">
+				<a href="/restaraunt-sushi/"">
+					<h2>Ресторан суши | 23.02.2020</h2>
+					<ul>
+						<li>Верстка и дизайн нуля</li>
+						<li>JQuery</li>
+						<li>Waypoitns.js - плавный скроллинг</li>
+					</ul>
+				</a>
+				<div class=" description">
+					<button class="button">Описание</button>
+					<p>Адаптивная верстка проекта</p>
+					</div>
 			</li>
-			<li>
-				<a href="/canvas/">Здесь проекты которые я реализовал на canvas</a>
+			<li class="item">
+				<a href="/tic-toc/">
+					<h2>Крестики-нолики</h2>
+					<ul>
+						<li>Vue js</li>
+						<li>Вся логика игры полностью написана с нуля</li>
+					</ul>
+				</a>
+				<div class="description">
+					<button class="button">Описание</button>
+					<p>Расширенная версия игры, с проигрыванием звука при ходе. Контроль побед и поражний. Сброс игры.</p>
+				</div>
 			</li>
-			<li>
-				<a href="/kteam-task-test/">Разработка карточек для. Тестовое задание kt-team</a>
+			<li class="item">
+				<a href="/kteam-task-test/">
+					<h2>Тестовое задание kt-team. Список карточек.</h2>
+					<ul>
+						<li>Vue js</li>
+						<li>Firebase</li>
+					</ul>
+					<div class="description">
+						<button class="button">Описание</button>
+						<p>Реализация карточек с возможностью и их пагинация. Возможность использования приложения с телефона.</p>
+					</div>
+				</a>
 			</li>
-			<li>
-				<a href="/control-progress/">Интересный контроль прогресса</a>
+			<li class="item">
+				<a href="/to-do-semantic-app/">
+					<h2>Список дел с accesseability</h2>
+					<ul>
+						<li>Вертска по макету</li>
+						<li>JQuery</li>
+					</ul>
+					<div class="description">
+						<button class="button">Описание</button>
+						<p>Список дел с исользованием aria атрибутов</p>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a href="/news-site/">
+					<h2>Новостной сайт от курса Skillbox</h2>
+					<ul>
+						<li>Вертска по макету</li>
+						<li>Адаптив</li>
+					</ul>
+					<div class="description">
+						<button class="button">Описание</button>
+						<p>Адаптивная верстка дополнительно с оптимизацией заргрузке изображний (стоят заглужки)</p>
+					</div>
+				</a>
+			</li>
+			<li class="item">
+				<a href="/canvas/">
+					<h2>Проекты реализованные на canvas</h2>
+				</a>
 			</li>
 		</ul>
-	</body>
+	</main>
+</body>
+
 </html>

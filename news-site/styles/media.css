@@ -1,0 +1,326 @@
+@media (max-width:1024px) {
+
+  /* STYLES */
+  .container {
+    width: 769px;
+    padding: 0 10px;
+  }
+
+  /* HEADER */
+  .menu__container {
+    padding-top: 50px;
+  }
+
+  .nav__item {
+    margin-right: 10px;
+  }
+
+  .nav__item::after {
+    right: -5px;
+  }
+
+  .nav__link {
+    font-size: 16px;
+  }
+
+  .city-link {
+    display: none;
+  }
+
+  .logo {
+    min-width: 140px;
+    margin-right: 0;
+  }
+
+  .top-menu__now {
+    margin-right: 0;
+  }
+
+  .top-menu__date {
+    display: none;
+  }
+
+  /* MAIN */
+  .column-center {
+    margin: 0 auto;
+    width: 100%;
+    order: -1;
+  }
+
+  .column-left {
+    width: 65%;
+  }
+
+  .column-right {
+    width: 35%;
+  }
+
+  .most-read-news {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-news__header_right {
+    width: 100%;
+  }
+
+  .main-new__header {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .main-new {
+    width: 100%;
+    order: -1;
+
+  }
+
+  .read-news {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width:768px) {
+
+  /* STYLES */
+  body {
+    background-color: #fff;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 320px;
+    padding: 0;
+  }
+
+  /* HEADER */
+  .header {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+
+  }
+
+  .header__container {
+    justify-content: center;
+  }
+
+  .menu__container {
+    padding: 10px 0;
+    padding-left: 25px;
+  }
+
+  .logo-top {
+    margin-bottom: 0;
+  }
+  .logo-image{
+    height: 25px;
+  }
+  .black-bar {
+    text-align: center;
+  }
+
+  .search-form {
+    margin: 0;
+  }
+  .button__submit{
+    width: 50px;
+  }
+  .black-bar__header {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .black-bar__time {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    margin-top: 25px;
+    padding-left: 25px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__item {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebebeb;
+
+  }
+
+  .nav__item::after {
+    content: '';
+  }
+
+  .top-menu {
+    padding: 15px 30px 15px 25px;
+    box-shadow: 0 4px 20px #00000012;
+    flex-wrap: nowrap;
+  }
+
+  .menu-open {
+    display: block;
+    margin-right: 15px;
+    order: -1;
+  }
+
+  .logo {
+    order: -1;
+    min-width: 40px;
+    margin-right: 0px;
+  }
+
+  .logo-top{
+    width: 170px;
+    height: 25px;
+  }
+
+
+
+  .search-form {
+    order: -1;
+  }
+
+  .top-menu__now {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .top-menu__weather {
+    display: flex;
+    margin-top: 50px;
+
+  }
+
+  .top-menu__date {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .input__search {
+    display: none;
+  }
+
+  .button__submit {
+    position: static;
+    height: 25px;
+    order: 1;
+  }
+
+  /* MAIN */
+  .main {
+    padding: 0;
+  }
+
+  .main-news {
+    margin-bottom: 30px;
+    padding-top: 140px;
+    padding-bottom: 25px;
+  }
+
+  .main-news__header {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .main-news__header-link {
+    margin-bottom: 25px;
+  }
+
+  .column-left {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-right: 20px;
+  }
+
+  .column-right {
+    display: flex;
+    width: auto;
+    margin-bottom: 40px;
+    padding:20px;
+    overflow-x: scroll;
+  }
+
+  .banner {
+    height: 400px;
+    width: 250px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+
+  .most-read-news {
+    margin: 0;
+  }
+
+  .most-read-news__disription {
+    display: none;
+  }
+
+  .block-news {
+    width: 100%;
+  }
+
+  .block-news__img {
+    margin-bottom: 10px;
+  }
+
+  .block-news__link,
+  .news-item-props {
+    padding-left: 25px;
+  }
+
+  .news-item .news-item-props {
+    padding: 0;
+  }
+
+
+  /* FOOTER */
+  .footer {
+    padding: 50px 25px 25px 25px;
+  }
+  .footer-container{
+    width: 295px;
+  }
+  .tags {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #26354e;
+  }
+
+  .about {
+    margin-bottom: 50px;
+  }
+
+  .about__tag {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .about__tag:first-child {
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+
+  .media {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+
+  .copyright {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .logo-bottom {
+    margin-bottom: 20px;
+  }
+}

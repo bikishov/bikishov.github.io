@@ -1,0 +1,10 @@
+.column-right
+{
+    width: 250px;
+}
+.banner{
+    margin-bottom: 15px;
+}
+.banner:last-child{
+    margin-bottom: 0;
+}

@@ -1,0 +1,115 @@
+.footer {
+    padding-top: 50px;
+    background-color: #00122f
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tags {
+    display: block;
+    width: 270px;
+    margin-right: 170px;
+}
+
+.tags__items {
+    column-count: 2;
+}
+
+.tags__item {
+    margin: 0 0 15px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    width: 200px;
+}
+
+.about__logo {
+    margin-bottom: 15px
+}
+
+.about__tag {
+    display: block;
+    margin-bottom: 13px
+}
+.contact__icon {
+    font-size: 18px
+}
+
+.contact__icon:first-child {
+    margin-bottom: 15px
+}
+
+.media__icon {
+    margin-right: 15px;
+}
+
+.media__icon:last-child {
+    margin-right: 0;
+}
+
+.media__social {
+    margin-bottom: 40px;
+}
+
+.media__social:first-child .media__icon {
+    display: inline
+}
+
+.media__social:first-child .media__link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.vk {
+    background-image: url("../img/vk.png");
+    background-size: cover;
+}
+
+.fb {
+    background-image: url("../img/facebook.png");
+    background-size: cover;
+}
+
+.twitter {
+    background-image: url("../img/twitter.png");
+    background-size: cover;
+}
+
+.instargam {
+    background-image: url("../img/instagram.png");
+    background-size: cover;
+}
+
+.phone {
+    padding-left: 25px;
+    background-image: url("../img/call-answer.png");
+    background-repeat: no-repeat;
+}
+
+.envelope {
+    padding-left: 25px;
+    background-image: url("../img/envelope.png");
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+}
+
+.copyright {
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    margin: 45px 0 0;
+    padding: 15px 0;
+    text-align: center;
+    opacity: .5;
+    border-top: 1px solid #26354e
+}
+
+
